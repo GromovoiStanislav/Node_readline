@@ -18,4 +18,7 @@ quest('Введите команду 1:')
   .then((answer) => {
     console.log('Ваша команда: ', answer);
   })
-  .finally(() => input.close());
+  .finally(() => {
+    console.log('Finish');
+    input.close();
+  });
